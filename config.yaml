@@ -1,0 +1,15 @@
+CompileFlags:
+    Add: [
+        "--target=x86_64-w64-mingw32",
+        "-Wno-vla",
+
+        "-IC:/bin/msys64/ucrt64/include/c++/15.1.0",
+        "-IC:/include",
+    ]
+
+Index:
+    StandardLibrary: No
+
+Diagnostics:
+    ClangTidy:
+        Remove: misc-definitions-in-headers
